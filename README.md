@@ -3,6 +3,7 @@
 ## Dynamically Scheduled MSDF High-Level Synthesis 
 
 This project is inspired by Dynamatic and we focus on HLS for MSDF Based Arbitrary Precision Computing.
+* **elastic-circuits**: LLVM Passes presented here wiil be used as the Front end of DMSDF HLS.
 
 ### Compiler
 
