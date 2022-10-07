@@ -4,7 +4,7 @@
 
 放在前面：
 安装过程可能会遇见一些麻烦，仅供参考
-1.
+### 1.
 编译安装llvm到home/llvm-6.0
 但在后面make的时候,会去/usr下面找include头文件,如果用户之前已经apt安装了llvm-6.0但没装polly
 会在编译elastic circuit时报错找不到polly相关头文件
@@ -13,7 +13,8 @@
 删除系统之前安装的llvm,然后在编译安装时默认安装位置,是/usr/local
 解决了编译代码的问题
 
-2.跑example时,报错找不到xxxxxxxxxxx.txt,这是有个readcsv函数里,指定了一个绝对路径,而这个文件是github上没有的
+### 2.
+跑example时,报错找不到xxxxxxxxxxx.txt,这是有个readcsv函数里,指定了一个绝对路径,而这个文件是github上没有的
 
 我的做法,注释掉了这一部分代码,这一部分和后端的delay,latency有关,在IR层面没什么影响
 
